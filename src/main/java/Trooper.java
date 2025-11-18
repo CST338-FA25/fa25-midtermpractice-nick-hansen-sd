@@ -21,9 +21,9 @@ public abstract class Trooper {
     }
 
     public Trooper(String unit, int number) {
-        this.unit = unit;
-        this.number = number;
-        marchSpeed = 5;
+        setUnit(unit);
+        setNumber(number);
+        setMarchSpeed(5);
     }
 
     public static void addToUnit(HashMap<String, List<Trooper>> units, Trooper t) {
